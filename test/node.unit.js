@@ -2,15 +2,15 @@
 
 var should = require('chai').should();
 var sinon = require('sinon');
-var dashcore = require('@dashevo/dashcore-lib');
-var Networks = dashcore.Networks;
+var npccoincore = require('@npccoin/npccoincore-lib');
+var Networks = npccoincore.Networks;
 var proxyquire = require('proxyquire');
 var util = require('util');
 var BaseService = require('../lib/service');
 var index = require('../lib');
 var log = index.log;
 
-describe('Dashcore Node', function() {
+describe('NPCcoincore Node', function() {
 
   var baseConfig = {};
 
@@ -425,7 +425,7 @@ describe('Dashcore Node', function() {
 
   describe('#getNetworkName', function() {
     afterEach(function() {
-      dashcore.Networks.disableRegtest();
+      npccoincore.Networks.disableRegtest();
     });
     it('it will return the network name for livenet', function() {
       var node = new Node(baseConfig);

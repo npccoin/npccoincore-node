@@ -6,7 +6,7 @@ module.exports.Service = require('./lib/service');
 module.exports.errors = require('./lib/errors');
 
 module.exports.services = {};
-module.exports.services.Dash = require('./lib/services/dashd');
+module.exports.services.NPCcoin = require('./lib/services/npccoind');
 module.exports.services.Web = require('./lib/services/web');
 
 module.exports.scaffold = {};
@@ -21,7 +21,7 @@ module.exports.scaffold.defaultConfig = require('./lib/scaffold/default-config')
 module.exports.cli = {};
 module.exports.cli.main = require('./lib/cli/main');
 module.exports.cli.daemon = require('./lib/cli/daemon');
-module.exports.cli.dashcore = require('./lib/cli/dashcore');
-module.exports.cli.dashcored = require('./lib/cli/dashcored');
+module.exports.cli.npccoincore = require('./lib/cli/npccoincore');
+module.exports.cli.npccoincored = require('./lib/cli/npccoincored');
 
-module.exports.lib = require('@dashevo/dashcore-lib');
+module.exports.lib = require('@npccoin/npccoincore-lib');
