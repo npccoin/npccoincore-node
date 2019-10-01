@@ -59,8 +59,8 @@ describe('#defaultConfig', function() {
       services: [
         'npccoind',
         'web',
-        'insight-api',
-        'insight-ui'
+        'insight-api-npccoin',
+        'insight-ui-npccoin'
       ],
       servicesConfig: {
         npccoind: {
@@ -91,7 +91,7 @@ describe('#defaultConfig', function() {
     });
     var home = process.env.HOME;
     var info = defaultConfig({
-      additionalServices: ['insight-api', 'insight-ui']
+      additionalServices: ['insight-api-npccoin', 'insight-ui-npccoin']
     });
     info.path.should.equal(home + '/.npccoincore');
     info.config.network.should.equal('livenet');
@@ -99,8 +99,8 @@ describe('#defaultConfig', function() {
     info.config.services.should.deep.equal([
       'npccoind',
       'web',
-      'insight-api',
-      'insight-ui'
+      'insight-api-npccoin',
+      'insight-ui-npccoin'
     ]);
     var npccoind = info.config.servicesConfig.npccoind;
     should.exist(npccoind);

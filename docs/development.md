@@ -15,7 +15,7 @@ To develop npccoincore-node:
 ```bash
 cd ~
 git clone git@github.com:<yourusername>/npccoincore-node.git
-git clone git@github.com:<yourusername>/bitcore-lib.git
+git clone git@github.com:<yourusername>/npccoincore-lib.git
 ```
 
 To develop bitcoin or to compile from source:
@@ -46,7 +46,7 @@ brew install zeromq
 ## Install and Symlink
 
 ```bash
-cd bitcore-lib
+cd npccoincore-lib
 npm install
 cd ../npccoincore-node
 npm install
@@ -57,8 +57,8 @@ npm install
 We now will setup symlinks in `npccoincore-node` *(repeat this for any other modules you're planning on developing)*:
 ```bash
 cd node_modules
-rm -rf bitcore-lib
-ln -s ~/bitcore-lib
+rm -rf npccoincore-lib
+ln -s ~/npccoincore-lib
 rm -rf bitcoind-rpc-npccoin
 ln -s ~/bitcoind-rpc-npccoin
 ```
@@ -114,8 +114,8 @@ Edit `npccoincore-node.json` with something similar to:
   "services": [
     "bitcoind",
     "web",
-    "insight-api",
-    "insight-ui",
+    "insight-api-npccoin",
+    "insight-ui-npccoin",
     "<additional_service>"
   ],
   "servicesConfig": {
@@ -129,16 +129,16 @@ Edit `npccoincore-node.json` with something similar to:
 }
 ```
 
-**Note**: To install services [insight-api](https://github.com/bitpay/insight-api) and [insight-ui](https://github.com/bitpay/insight-ui) you'll need to clone the repositories locally.
+**Note**: To install services [insight-api-npccoin](https://github.com/npccoin/insight-api-npccoin) and [insight-ui-npccoin](https://github.com/npccoin/insight-ui-npccoin) you'll need to clone the repositories locally.
 
 Setup symlinks for all of the services and dependencies:
 
 ```bash
 cd node_modules
-ln -s ~/bitcore-lib
+ln -s ~/npccoincore-lib
 ln -s ~/npccoincore-node
-ln -s ~/insight-api
-ln -s ~/insight-ui
+ln -s ~/insight-api-npccoin
+ln -s ~/insight-ui-npccoin
 ```
 
 Make sure that the `<datadir>/bitcoin.conf` has the necessary settings, for example:

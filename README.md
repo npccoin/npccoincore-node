@@ -19,8 +19,8 @@ If it doesn't exist, it will create it, with basic task to connect to npccoind.
 
 Some plugins are available :
 
-- Insight-API : `./bin/npccoincore-node addservice @npccoin/insight-api`
-- Insight-UI : `./bin/npccoincore-node addservice @npccoin/insight-ui`
+- Insight-API : `./bin/npccoincore-node addservice @npccoin/insight-api-npccoin`
+- Insight-UI : `./bin/npccoincore-node addservice @npccoin/insight-ui-npccoin`
 
 You also might want to add these index to your npccoin.conf file :
 ```
@@ -78,8 +78,8 @@ For more information about (and developing) services, please see the [Service Do
 
 There are several add-on services available to extend the functionality of Bitcore:
 
-- [Insight API](https://github.com/npccoin/insight-api/tree/master)
-- [Insight UI](https://github.com/npccoin/insight-ui/tree/master)
+- [Insight API](https://github.com/npccoin/insight-api-npccoin/tree/master)
+- [Insight UI](https://github.com/npccoin/insight-ui-npccoin/tree/master)
 - [Bitcore Wallet Service](https://github.com/npccoin/npccoincore-wallet-service/tree/master)
 
 ## Documentation
@@ -99,24 +99,24 @@ There are several add-on services available to extend the functionality of Bitco
 Prerequisite : Having a npccoind node already runing `npccoind --daemon`.
 
 NPCcoincore-node : `git clone https://github.com/npccoin/npccoincore-node -b develop`
-Insight-api (optional) : `git clone https://github.com/npccoin/insight-api -b develop`
-Insight-UI (optional) : `git clone https://github.com/npccoin/insight-ui -b develop`
+Insight-api (optional) : `git clone https://github.com/npccoin/insight-api-npccoin -b develop`
+Insight-UI (optional) : `git clone https://github.com/npccoin/insight-ui-npccoin -b develop`
 
 Install them :
 ```
 cd npccoincore-node && npm install \
- && cd ../insight-ui && npm install \
- && cd ../insight-api && npm install && cd ..
+ && cd ../insight-ui-npccoin && npm install \
+ && cd ../insight-api-npccoin && npm install && cd ..
 ```
 
 Symbolic linking in parent folder :
 ```
-npm link ../insight-api
-npm link ../insight-ui
+npm link ../insight-api-npccoin
+npm link ../insight-ui-npccoin
 ```
 
 Start with `./bin/npccoincore-node start` to first generate a ~/.npccoincore/npccoincore-node.json file.
-Append this file with `"@npccoin/insight-ui"` and `"@npccoin/insight-api"` in the services array.
+Append this file with `"@npccoin/insight-ui-npccoin"` and `"@npccoin/insight-api-npccoin"` in the services array.
 
 ## Contributing
 
