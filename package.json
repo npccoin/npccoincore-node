@@ -1,7 +1,7 @@
 {
   "name": "@npccoin/npccoincore-node",
   "description": "Full node with extended capabilities using NPCcoincore and NPCcoin Core (npccoind)",
-  "author": "BitPay <dev@bitpay.com>",
+  "author": "NPCcoin Core Developers <npccoin@gmail.com>",
   "version": "5.1.4",
   "main": "./index.js",
   "repository": "git://github.com/npccoin/npccoincore-node.git",
@@ -10,6 +10,10 @@
     "url": "https://github.com/npccoin/npccoincore-node/issues"
   },
   "contributors": [
+    {
+      "name": "Estilodevida",
+      "email": "estilodevidanpc@gmail.com"
+    },
     {
       "name": "Christopher Jeffrey"
     },
