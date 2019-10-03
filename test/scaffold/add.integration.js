@@ -94,8 +94,8 @@ describe('#add', function() {
       var callCount = 0;
       var oldPackage = {
         dependencies: {
-          '@npccoin/npccoincore-lib': '^v0.15.4',
-          '@npccoin/npccoincore-node': '^v3.0.7'
+          'npccoincore-lib': '^v0.18.0',
+          'npccoincore-node': '^v5.1.4'
         }
       };
       var spawn = sinon.stub().returns({

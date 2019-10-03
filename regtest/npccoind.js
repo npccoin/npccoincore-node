@@ -7,7 +7,7 @@ var index = require('..');
 var log = index.log;
 
 var chai = require('chai');
-var npccoincore = require('@npccoin/npccoincore-lib');
+var npccoincore = require('npccoincore-lib');
 var BN = npccoincore.crypto.BN;
 var async = require('async');
 var rimraf = require('rimraf');

@@ -6,7 +6,7 @@ var spawn = require('child_process').spawn;
 
 var NPCcoindRPC = require('@npccoin/npccoind-rpc');
 var rimraf = require('rimraf');
-var npccoincore = require('@npccoin/npccoincore-lib');
+var npccoincore = require('npccoincore-lib');
 var chai = require('chai');
 var should = chai.should();
 

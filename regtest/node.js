@@ -9,7 +9,7 @@ var log = index.log;
 log.debug = function() {};
 
 var chai = require('chai');
-var npccoincore = require('@npccoin/npccoincore-lib');
+var npccoincore = require('npccoincore-lib');
 var rimraf = require('rimraf');
 var node;
 
