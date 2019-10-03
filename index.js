@@ -24,4 +24,4 @@ module.exports.cli.daemon = require('./lib/cli/daemon');
 module.exports.cli.npccoincore = require('./lib/cli/npccoincore');
 module.exports.cli.npccoincored = require('./lib/cli/npccoincored');
 
-module.exports.lib = require('@npccoin/npccoincore-lib');
+module.exports.lib = require('npccoincore-lib');

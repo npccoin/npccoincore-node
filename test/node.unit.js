@@ -2,7 +2,7 @@
 
 var should = require('chai').should();
 var sinon = require('sinon');
-var npccoincore = require('@npccoin/npccoincore-lib');
+var npccoincore = require('npccoincore-lib');
 var Networks = npccoincore.Networks;
 var proxyquire = require('proxyquire');
 var util = require('util');

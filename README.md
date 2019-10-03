@@ -32,11 +32,11 @@ You also might want to add these index to your npccoin.conf file :
 ### As a library
 
 ```bash
-npm install @npccoin/npccoincore-node
+npm install npccoincore-node
 ```
 
 ```javascript
-const npccoincore = require('@npccoin/npccoincore-node');
+const npccoincore = require('npccoincore-node');
 const config = require('./npccoincore-node.json');
 
 let node = npccoincore.scaffold.start({ path: "", config: config });
